@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
-export default function AddToDo(onCreate) {
+export default function AddToDo({onCreate}) {
     const [value, setValue] = useState('')
     function submitHandler(event) {
         event.preventDefault()
